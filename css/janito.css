@@ -1,0 +1,180 @@
+figure,p, time, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(39, 59, 71);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .logotipo {
+    order: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .logotipo img {
+    height: 50px;
+    margin-left: 20px;
+  }
+  .navegacion {
+    order: 2;
+  }
+  .menu {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .menu ul {
+    height: 55px;
+    font-size: 0;
+    line-height: 55px;
+    padding: 0;
+
+  }
+  .menu li {
+    font-size: 14px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+  }
+  .menu a{
+    padding: 14px 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+  }
+  .menu a:hover {
+    border-top: 5px solid rgb(255, 72, 66);
+  }
+  .line:before {
+    height: 2em;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    content: '';
+    border-right: 1px solid rgb(255, 255, 255);
+  }
+
+  .button {
+    background-color: rgb(255, 72, 66);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 4px solid rgb(255, 12, 66);
+    margin: 10px;
+    padding:  7px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.contenedor {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.portada {
+  background-color: rgb(239, 239, 239);
+}
+  .imagen-portada {
+    position: relative;
+    font-size: 0;
+  }
+  .imagen-portada img {
+    width: 100%;
+  }
+  .resumen-portada {
+    position: absolute;
+    bottom:40px;
+    left: 20px;
+    width: 530px;
+    height: 190px;
+    background-color: rgba(255, 255, 255,.85);
+  }
+  .resumen-portada h2 {
+    color: rgb(88, 88, 88);
+    margin:25px 25px 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+  .creditos {
+    margin: 25px;
+    }
+  .creditos img {
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 0;
+  }
+  .detalles {
+    color: rgb(88, 88, 88);
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  .autor a {
+    cursor: pointer;
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+  }
+  .items {
+    padding: 29px 0;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .items-summary {
+    width: 314px;
+    margin: 0 0 29px;
+  }
+  .items-summary h4 {
+    margin: 15px 0 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+
+  .items-summary img {
+    width: 100%;
+  }
+.paginacion {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:29px;
+  color: #666;
+  font-weight: bold;
+}
+.paginacion ul {
+  margin-left: 15px;
+  padding: 0;
+}
+.paginacion li {
+  display: inline-block;
+  background-color: #eaeaea;
+  border: 1px solid #999;
+  padding: 8px 12px;
+  margin: 0 5px;
+}
+.paginacion a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+}
