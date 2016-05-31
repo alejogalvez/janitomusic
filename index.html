@@ -4,8 +4,9 @@
   <title>Janito - El Blog del Dj</title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
+  <style>
+    .contenedor,.header,.portada-imagen img{width:100%}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,figure,header,nav,section{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}.header-menu-list-item a,.header-mobile .button,.portada-resumen .autor a{text-decoration:none}img{border-style:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}a,article,div,figure,h2,h4,header,li,nav,p,section,span,ul{margin:0;padding:0}@font-face{font-family:icomoon;src:url(../fonts/icomoon.eot?32sg7t);src:url(../fonts/icomoon.eot?32sg7t#iefix) format("embedded-opentype"),url(../fonts/icomoon.ttf?32sg7t) format("truetype"),url(../fonts/icomoon.woff?32sg7t) format("woff"),url(../fonts/icomoon.svg?32sg7t#icomoon) format("svg");font-weight:400;font-style:normal}[class^=icon-]{font-family:icomoon!important;speak:none;font-size:25px;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:55px;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e900"}.header{background-color:#273b47;height:55px;display:flex;justify-content:space-between;align-items:center;z-index:1}.header-logo img{height:50px;margin-left:20px}.header-mobile{display:flex;justify-content:flex-end}.header-mobile .icon-menu{order:2;margin-right:20px}.header-mobile .button{order:1;color:#fff;margin:0 10px;padding:8px 15px;font-size:13px}.header-menu-list{background-color:rgba(30,46,56,.5);list-style:none;position:absolute;top:-240px;left:0;width:100%;z-index:2;font-size:0}.header-menu-list-item{font-size:14px;text-align:center}.header-menu-list-item a{color:#fff;display:block;padding:14px 15px}@media (min-width:321px){.header-mobile .button{display:inline-block;background-color:#ff4842;border:none;border-radius:4px;border-bottom:4px solid #ff0c42;margin:auto 10px;padding:7px 10px;font-size:14px;font-weight:700}}@media (min-width:769px){.header-menu{font-size:0}.header-mobile .button{margin:auto 10px auto 30px}.header-mobile .icon-menu{display:none}.header-menu-list{height:55px;line-height:55px;background-color:transparent;position:static}.header-menu-list-item{display:inline-block}.header-menu-list-item a{position:relative;padding:3px 15px}}.contenedor{max-width:100%;position:relative}.portada{background-color:#efefef}.portada-imagen{position:relative;font-size:0}.portada-resumen{position:absolute;bottom:10px;left:0;right:0;background-color:rgba(255,255,255,.85)}.portada-resumen h2{font-size:15px;font-weight:700;color:#585858;margin:5px;padding-bottom:5px;border-bottom:1px solid #c5c5c5}.portada-resumen .creditos{margin:5px 25px}.portada-resumen .creditos img{width:35px;height:35px;float:left;margin-right:10px;border-radius:50%;border:0}.portada-resumen .detalles{color:#585858;height:35px;display:flex;justify-content:space-between;align-items:center;font-size:13px}.portada-resumen .autor a{color:#585858}@media (max-width:320px){.portada-resumen .creditos{display:none}}@media (min-width:321px){.portada-resumen{left:10px;right:10px}.portada-resumen h2{margin:15px 20px;font-size:18px}}@media (min-width:479px){.portada-resumen{left:20px;right:20px;bottom:20px}.portada-resumen h2{font-size:25px}}@media (min-width:769px){.portada-resumen{bottom:40px;left:20px;width:530px;height:190px}.portada-resumen h2{margin:25px 25px 0;padding-bottom:25px}.portada-resumen .creditos{margin:10px 25px}}.items{margin:10px;width:auto;display:flex;flex-wrap:wrap;justify-content:space-between}.items-summary{width:100%;margin:0 0 10px}.items-summary h4{margin:5px 0 0;padding-bottom:5px;border-bottom:1px solid #c5c5c5}.items-summary img{width:100%}@media (min-width:481px){.items{margin:20px}.items-summary{width:48%}}@media (min-width:769px){.items{margin:29px}.items-summary{width:31%}}@media (min-width:1000px){.contenedor{width:1000px;margin:0 auto}.items{margin:29px auto}.items-summary{width:314px}}
+  </style>
 </head>
 <body>
   <header class="header">
@@ -165,6 +166,18 @@
     </article>
   </section>
 </body>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:400,300,600,700,800:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 <script>
   (function(){
     var btnMenu = document.getElementById('btnMenu');
@@ -177,4 +190,5 @@
     }
   }());
 </script>
+<link rel="stylesheet" href="css/main.css">
 </html>
