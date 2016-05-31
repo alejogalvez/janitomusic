@@ -79,9 +79,9 @@ body {
 
 .contenedor {
   width: 1000px;
-  max-width: 100%;
+  /*max-width: 100%;*/
   margin: 0 auto;
-  position: relative;
+  /*position: relative;*/
 }
 
 .portada {
@@ -95,18 +95,18 @@ body {
     width: 100%;
   }
   .resumen-portada {
-    position: absolute;
+    /*position: absolute;*/
     bottom:40px;
     left: 20px;
     width: 530px;
     height: 190px;
-    background-color: rgba(255, 255, 255,.85);
+    /*background-color: rgba(255, 255, 255,.85);*/
   }
   .resumen-portada h2 {
-    color: rgb(88, 88, 88);
+    /*color: rgb(88, 88, 88);*/
     margin:25px 25px 0;
     padding-bottom: 25px;
-    border-bottom: 1px solid #c5c5c5;
+    /*border-bottom: 1px solid #c5c5c5;*/
   }
   .creditos {
     margin: 25px;

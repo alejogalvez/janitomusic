@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <title>Janito - El Blog del Dj</title>
   <meta charset="UTF-8"/>
-  <link rel="stylesheet" href="css/normalize.css"/>
-  <link rel="stylesheet" href="css/janito.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
 </head>
 <body>
   <header class="header">
-    <figure class="logotipo">
-      <img src="images/janito-white.png" alt="Janito Logotipo">
+    <figure class="header-logo">
+      <img src="images/janito-white.png" alt="Logo Janito"/>
     </figure>
-    <div class="navegacion">
-      <nav class="menu">
-        <ul>
-          <li><a class="line" href="">Cursos</a></li>
-          <li><a class="line" href="">Blog</a></li>
-          <li><a class="line" href="">FAQ</a></li>
-          <li><a class="line" href="">Horario</a></li>
-          <li><a href="">Live</a></li>
+    <div class="header-mobile">
+      <span id="btnMenu" class="icon-menu"></span>
+      <nav class="header-menu">
+        <ul id="navbarMenu" class="header-menu-list">
+          <li class="header-menu-list-item"><a class="line" href="#">Cursos</a></li>
+          <li class="header-menu-list-item"><a class="line" href="#">Blog</a></li>
+          <li class="header-menu-list-item"><a class="line" href="#">FAQ</a></li>
+          <li class="header-menu-list-item"><a class="line" href="#">Horario</a></li>
+          <li class="header-menu-list-item"><a href="#">Live</a></li>
         </ul>
       </nav>
-      <a class="button" href="#">Iniciar Sesión</a>
+      <a href="#" class="button">Iniciar Sesión</a>
     </div>
   </header>
   <section class="portada">
     <div class="contenedor">
-      <figure class="imagen-portada">
+      <figure class="portada-imagen">
         <img src="images/008.jpg" alt="Foto de portada principal"/>
       </figure>
-      <div class="resumen-portada">
+      <div class="portada-resumen">
         <h2>Consejos que aumentarán tu efectividad al trabajar en tu estudio de audio </h2>
         <div class="creditos">
           <a href="#"><img src="images/alexandro.jpg" alt="Foto de autor"></a>
@@ -162,16 +164,17 @@
       </div>
     </article>
   </section>
-  <section class="paginacion contenedor">
-    <p>Página de 1 de 23</p>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">Siguiente</a></li>
-      <li><a href="#">Última Página</a></li>
-    </ul>
-  </section>
 </body>
+<script>
+  (function(){
+    var btnMenu = document.getElementById('btnMenu');
+    var navbarMenu = document.getElementById('navbarMenu');
+
+    btnMenu.addEventListener('click', onClickMenu);
+
+    function onClickMenu(){
+      navbarMenu.classList.toggle('header-menu-list--show');
+    }
+  }());
+</script>
 </html>
